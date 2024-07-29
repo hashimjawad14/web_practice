@@ -1,0 +1,44 @@
+<template>
+<v-card>
+    <v-layout>
+        <v-navigation-drawer class="bg-light-blue-accent-4" theme="dark" permanent>
+            <v-app-bar-title class="abc"><v-icon>mdi-view-dashboard</v-icon>Airbyte Pro </v-app-bar-title>
+        <h4 style="padding: 20px 0px 0px 20px;">Dashboard</h4>
+            <v-list color="transparent">
+                <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard"></v-list-item>
+                <v-list-item prepend-icon="mdi-account-box" title="Account"></v-list-item>
+                <v-list-item prepend-icon="mdi-gavel" title="Admin"></v-list-item>
+            </v-list>
+
+            <template v-slot:append>
+                <div class="pa-2">
+                    <v-btn block class="bg-light-blue-lighten-5">
+                        M. Hashim
+                    </v-btn>
+                </div>
+            </template>
+        </v-navigation-drawer>
+        <v-main style="height: 100vh"></v-main>
+    </v-layout>
+</v-card>
+</template>
+
+  
+<script>
+export default{
+    name: 'NavDrawer',
+
+methods: {
+  
+},}
+</script>
+
+
+<style scoped>
+.v-list-item:hover{
+background-color: rgba(120, 144, 156, 0.5);
+}
+.abc{
+    margin: 20px;
+}
+</style>
